@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app='natal'>
+<head>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css" />
+</head>
+<body ng-controller = 'PedidoController as natal'>
+	<script type="text/javascript" src="node_modules\angular\angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  
+  <div ng-repeat= 'pedido in natal.pedidos'>
+    <p>Nome da Crianca: {{pedido.nomeCrianca}}</p>
+    <p>Idade: {{pedido.idade}}</p>
+    <p>Pedido: {{pedido.pedido}}</p>
+  </div>
+
+</body>
+</html>
